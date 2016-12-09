@@ -1,0 +1,49 @@
+{
+  "name": "senio-flow",
+  "version": "0.1.0",
+  "description": "es6-webpack-react-karma-boilerplate",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "cd test && node server.js",
+    "test": "npm run eslint && npm run unit",
+    "karma": "karma start --single-run karma.config.js",
+    "eslint": "eslint .",
+    "eslint:watch": "eslint run-script sass -- --eslint",
+    "unit": "mocha --compilers js:babel-register --recursive test/unit/**",
+    "unit:watch": "npm run unit -- --watch"
+  },
+  "dependencies": {
+    "babel-plugin-transform-es2015-destructuring": "^6.18.0",
+    "babel-plugin-transform-object-rest-spread": "^6.16.0",
+    "babel-runtime": "^6.9.2",
+    "deep-equal": "^1.0.1",
+    "glamor": "^2.18.2",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-redux": "^4.4.6",
+    "redux": "^3.6.0",
+    "webpack": "^1.14.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-eslint": "^6.0.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "eslint": "^2.11.1",
+    "eslint-plugin-babel": "^3.2.0",
+    "eslint-plugin-import": "^1.8.1",
+    "eslint-plugin-mocha": "^4.7.0",
+    "eslint-plugin-react": "^5.1.1",
+    "expect": "^1.20.2",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-mocha": "^1.3.0",
+    "karma-spec-reporter": "0.0.26",
+    "karma-webpack": "^1.7.0",
+    "mocha": "^3.1.2",
+    "react-hot-loader": "^1.3.0",
+    "redux-logger": "^2.7.4",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
